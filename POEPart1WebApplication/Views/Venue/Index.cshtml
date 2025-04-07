@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Venue>
+
+<h2>Venues</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Venue Name</th>
+            <th>Location</th>
+            <th>Capacity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var venue in Model)
+        {
+            <tr>
+                <td>@venue.VenueName</td>
+                <td>@venue.Location</td>
+                <td>@venue.Capacity</td>
+            </tr>
+        }
+    </tbody>
+</table>
